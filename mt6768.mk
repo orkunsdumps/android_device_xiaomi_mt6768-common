@@ -331,6 +331,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.radio-V1.4-java
 
+# RemovePackages
+$(call inherit-product-if-exists, vendor/Remove_Packages/config.mk)
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
